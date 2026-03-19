@@ -1,6 +1,6 @@
 {
-    "name": "node-red-contrib-myenergi",
-    "version": "1.0.5",
+    "name": "node-red-contrib-myenergi-fork",
+    "version": "1.0.8",
     "description": "Node-red node to connect to Myenergi products",
     "main": "index.js",
     "scripts": {
@@ -10,7 +10,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/brookesdjb/node-red-contrib-myenergi.git"
+        "url": "git+https://github.com/JulienThomas49/node-red-contrib-myenergi.git"
     },
     "node-red": {
         "version": ">=3.0.0",
@@ -25,7 +25,8 @@
             "getHarvi": "getHarvi.js",
             "setZappiChargeMode": "setZappiChargeMode.js",
             "setZappiBoostMode": "setZappiBoostMode.js",
-            "setZappiGreenLevel": "setZappiGreenLevel.js"
+            "setZappiGreenLevel": "setZappiGreenLevel.js",
+            "setEddiBoost": "setEddiBoost.js"
         }
     },
     "keywords": [
@@ -37,14 +38,14 @@
         "ev",
         "charge"
     ],
-    "author": "David Brookes",
+    "author": "J. THOMAS (Based on work by David Brookes)",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/brookesdjb/node-red-contrib-myenergi/issues"
+        "url": "https://github.com/JulienThomas49/node-red-contrib-myenergi/issues"
     },
-    "homepage": "https://github.com/brookesdjb/node-red-contrib-myenergi#readme",
+    "homepage": "https://github.com/JulienThomas49/node-red-contrib-myenergi#readme",
     "dependencies": {
-        "myenergi-api": "^2.0.0"
+        "myenergi-api": "^2.5.0"
     },
     "prettier": {
         "singleQuote": false,
