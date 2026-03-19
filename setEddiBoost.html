@@ -30,13 +30,16 @@
     <h2>Ask a Eddi to change to boost mode</h2>
     <p>
         You must set <code>msg.payload.boostMode</code> to one of
-        <code>[TODO reprendre la doc]</code>
+        <code
+            >[CancelHeater1, CancelHeater2, CancelRelay1, CancelRelay2, ManualHeater1,
+            ManualHeater2, ManualRelay1, ManualRelay2]</code
+        >
     </p>
     <p>If you have more than one Eddi, you must supply <code>msg.payload.serial</code>.</p>
     <p>
-        If you are entering Manual mode you can optionally supply
-        <code>msg.payload.minutes</code>
-        to set the amount of boost in kWh. The default is 99kWh if you don't supply this.
+        The duration of the boost can be set by supplying <code>msg.payload.minutes</code>. This
+        will set the boost for the specified amount of minutes. If you don't supply this, the
+        boost will be set for 60 minutes by default.
     </p>
     <p>
         Refer to the official Zappi documentation

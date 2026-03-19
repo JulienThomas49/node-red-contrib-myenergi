@@ -22,7 +22,7 @@ module.exports = function (RED) {
                 return this.error(text);
             }
 
-            const minutes = msg.payload.minutes || 99;
+            const minutes = msg.payload.minutes || 60;
 
             let serial = msg.payload.serial;
             if (!serial) {
@@ -38,7 +38,7 @@ module.exports = function (RED) {
                 });
             } else {
                 this.status({
-                    text: `Boost mode set to [${msg.payload.boostMode}]`,
+                    text: `Boost mode set to [${msg.payload.boost}]`,
                     fill: "green",
                 });
             }

@@ -1,6 +1,6 @@
 {
     "name": "node-red-contrib-myenergi-fork",
-    "version": "1.0.8",
+    "version": "1.0.10",
     "description": "Node-red node to connect to Myenergi products",
     "main": "index.js",
     "scripts": {
